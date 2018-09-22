@@ -74,16 +74,16 @@ h1{
     background-image: url("blake4.jpg");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
     border-bottom: solid 10px rgb(14, 124, 175);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+
 .hero p{
     margin: 0;
     text-align: center;
     color: rgb(95, 95, 95);
-    padding-top: 2em;
-    font-size: 3em;
+    padding-top: 1em;
+    font-size: 4em;
 }
 /* .carousel{
     padding-top: 1em;
@@ -106,6 +106,9 @@ h1{
 /* }  */
 #quote {
     text-align: center;
+}
+#quote p strong{
+    font-size: 2em;
 }
 .about {
     display: grid;
@@ -178,7 +181,7 @@ h1{
     grid-column: 3 / 5;
     height: 200%;
     justify-self: center;
-    margin-bottom: 1em;
+    margin-bottom: 0.5em;
     align-self: end;
     transform: rotate(-7deg);
 }
@@ -380,7 +383,7 @@ h1{
     transform:rotate(0deg);
     transform:scale(1.1, 1.1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 99;
+    z-index: 98;
 }
 #project1:hover .pushpin{
     display: none;
@@ -485,7 +488,7 @@ h1{
     transform:rotate(0deg);
     transform:scale(1.1, 1.1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 99;
+    z-index: 98;
 }
 #project2:hover .pushpin{
     display: none;
@@ -537,7 +540,7 @@ h1{
     transform:rotate(0deg);
     transform:scale(1.1, 1.1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 99;
+    z-index: 98;
 }
 #project3:hover .pushpin{
     display: none;
@@ -592,7 +595,7 @@ h1{
     transform:rotate(0deg);
     transform:scale(1.1, 1.1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 99;
+    z-index: 98;
 }
 #project4:hover .pushpin{
     display: none;
@@ -600,7 +603,7 @@ h1{
 #project4 .image1{
     width: 90%;
 }
-.social{
+#social{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
@@ -614,37 +617,51 @@ h1{
     border-bottom: solid 10px rgb(14, 124, 175);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.social p{
+#social h1{
     grid-column: 1 / 7;
+    font-size: 2.5em;
     width: 100%;
-    margin: 0.5em 0;
+    margin: 0;
+    margin-bottom: 0.5em;
     background-color: rgb(14, 124, 175);
     color: white;
     text-align: center;
 }
-#emailicon{
+#emaillink{
     grid-row: 2 / 3;
     grid-column: 2 / 3;
-    width: 40%;
-    margin-bottom: 0.5em;
+    margin: 1em 0;
+    height: 6em;
 }
-#linkedicon{
+#emailicon{
+    height: 100%
+}
+#linkedlink{
     grid-row: 2 / 3;
     grid-column: 3 / 4;
-    width: 40%;
-    margin-bottom: 0.5em;
+    height: 6em;
+    margin: 1em 0;
 }
-#giticon{
+#linkedicon{
+    height: 100%;
+}
+#gitlink{
     grid-row: 2 / 3;
     grid-column: 4 / 5;
-    width: 40%;
-    margin-bottom: 0.5em;
+    height: 6em;
+    margin: 1em 0;
 }
-#twittericon{
+#giticon{
+    height: 100%;
+}
+#twitterlink{
     grid-row: 2 / 3;
     grid-column: 5 / 6;
-    width: 40%;
-    margin-bottom: 0.5em;
+    height: 6em;
+    margin: 1em 0;
+}
+#twittericon{
+    height: 100%;
 }
 @media(max-width: 800px){
     .about {
