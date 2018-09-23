@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Josefin+Slab:600,700');
 
+/* Standard page settings */
 body, html{
     margin: 0;
     font-family: 'Josefin Slab';
@@ -7,6 +8,8 @@ body, html{
     background-color:rgb(243, 243, 243);
     scroll-behavior: smooth;
 }
+
+/* Nav bar START */
 nav{
     position: sticky;
     top: 0;
@@ -15,26 +18,22 @@ nav{
     z-index: 99;
 }
 
-p{
-    font-size: 2em;
-}
-h1{
-    font-family: 'Josefin Slab';
-    font-weight: 600;
-}
-  @keyframes slide-in-top {
+/* Nav bar animation START */
+@keyframes slide-in-top {
     0% {
-      -webkit-transform: translateY(-1000px);
-              transform: translateY(-1000px);
-      opacity: 0;
+        -webkit-transform: translateY(-1000px);
+                transform: translateY(-1000px);
+        opacity: 0;
     }
     100% {
-      -webkit-transform: translateY(0);
-              transform: translateY(0);
-      opacity: 1;
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+        opacity: 1;
     }
-  }
-  
+}
+/*Nav bar animation END  */
+
+/* Nav bar alignment settings START*/
 .menu-content{
     list-style-type: none;
     padding: 0;
@@ -46,7 +45,6 @@ h1{
     animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-
 .menu-content a{
     display: flex;
     align-items: center;
@@ -57,6 +55,7 @@ h1{
     text-align: center;
     font-size: 0.8em;
 }
+/* Nav bar alignment settings END */
 
 .navbar{
     height: 4vh;
@@ -66,7 +65,17 @@ h1{
     background-color:rgb(33, 140, 190);
     color: white;
 }
+/* Nav bar END */
 
+p{
+    font-size: 2em;
+}
+h1{
+    font-family: 'Josefin Slab';
+    font-weight: 600;
+}
+
+/* Hero section START */
 .hero{
     margin: 1em;
     height: 90vh;
@@ -84,6 +93,9 @@ h1{
     padding-top: 2em;
     font-size: 5em;
 }
+/* Hero section END */
+
+/* About me section START */
 #quote {
     text-align: center;
 }
@@ -93,6 +105,7 @@ h1{
 #quote img{
     height: 400px;
 }
+/* About container START */
 .about {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -105,36 +118,38 @@ h1{
     border-bottom: solid 10px rgb(14, 124, 175);
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
+/* About container END */
 
+/* Standard grid settings*/
+.aboutsection{
+    display: grid;
+    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
+    margin-top: 1em;
+    height: 85%;
+    width: 70%;
+    background-color: white;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* Development settings */
 #development{
     display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: 1fr 5fr 3fr 1fr 4fr 2fr 1fr;
-    margin-top: 1em;
-    height: 85%;
-    width: 70%;
-    background-color: white;
     border-bottom: solid 8px rgb(221, 74, 135);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform:rotate(-3deg);
 }
+
+/* Education settings */
 #education{
-    display: grid;
-    grid-template-columns: 1fr 2fr 2fr 2fr 2fr 1fr;
     grid-template-rows: 1fr 5fr 3fr 1fr 2fr 4fr 1fr;
-    margin-top: 1em;
-    height: 85%;
-    width: 70%;
-    background-color: white;
     border-bottom: solid 8px rgb(230, 141, 7);
-    border-top-left-radius: 10%;
-    border-top-right-radius: 10%;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     transform: rotate(7deg);
 }
-#development h2, #education h2{
+
+/* h2 settings for about section */
+.aboutsection h2{
     grid-column: 1 / 7;
     grid-row: 3 / 4;
     font-size: 1.5em;
@@ -144,8 +159,10 @@ h1{
     margin-bottom: 0;
     background-color:rgb(221, 74, 135);
     padding: 0.5em;
-    color: white;
+    color: white;  
 }
+
+/* Hover effect for development and education */
 #development:hover, #education:hover{
     transform:rotate(0deg);
     transform: scale(1.2, 1.2);
@@ -155,10 +172,13 @@ h1{
 #development:hover .pushpin, #education:hover .pushpin{
     display: none;
 }
+
+/* Education colour */
 #education h2{
     background-color: rgb(230, 141, 7);
 }
 
+/* Main icons for development and education sections */
 #devicon, #eduicon{
     grid-column: 3 / 5;
     grid-row: 2 / 3;
@@ -169,6 +189,8 @@ h1{
 #eduicon{
     height: 80%;
 }
+
+/* Pushpin settings */
 .pushpin{
     grid-row: 1 / 2;
     grid-column: 3 / 5;
@@ -181,6 +203,8 @@ h1{
 #education .pushpin{
     transform: rotate(-55deg);
 }
+
+/* Development coding language icon settings START */
 .codeicon{
     grid-row: 5 / 6;
     height: 80%;
@@ -200,6 +224,9 @@ h1{
 #bootstrapicon{
     grid-column: 4 / 5;
 }
+/* Development coding language icon settings END */
+
+/* Text for each development language settings START */
 .codetitle{
     grid-row: 6 / 7;
     margin: 0;
@@ -219,6 +246,9 @@ h1{
 #bootstrap{
     grid-column: 4 / 5;
 }
+/* Text for each development language settings END */
+
+/* Education section START */
 .edutitle{
     grid-row: 5 / 6;
     justify-self: end;
@@ -226,13 +256,19 @@ h1{
     margin: 0;
     width: 90%;
 }
+
+/* Marcellin column setting */
 #marcellin{
     grid-column: 2 / 4;
     justify-self: start;
 }
+
+/* Coder academy column setting */
 #coder{
     grid-column: 4 / 6;
 }
+
+/* Standard Marcellin & coder paragraph settings */
 .edupara{
     font-size: 1em;
     grid-row: 6 / 7;
@@ -240,14 +276,22 @@ h1{
     text-align: center;
     width: 90%;  
 }
+
+/* Marcellin paragraph */
 #marcellinabout{
     grid-column: 2 / 4;
     justify-self: start;
 }
+
+/* Coder Academy paragraph */
 #coderabout{
     grid-column: 4 / 6;
     justify-self: end;
 }
+/* Education section END */
+
+/* Project section START*/
+/* Container START */
 .work{
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -273,6 +317,9 @@ h1{
     margin-top: 0;
     margin-bottom: 1em;
 }
+/* Container END */
+
+/* Standard project class START */
 .projects{
     display: grid;
     grid-template-columns: 1fr;
@@ -282,21 +329,6 @@ h1{
     width: 85%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-}
-.projects .pushpin{
-    grid-row: 1 / 2;
-    grid-column: 1 / 2;
-    height: 90%;
-    margin-bottom: 1em;
-}
-.projects:hover .pushpin{
-    display: none;
-}
-#project1:hover, #project2:hover, #project3:hover, #project4:hover{
-    transform:rotate(0deg);
-    transform:scale(1.1, 1.1);
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    z-index: 98;
 }
 .projects h1{
     grid-row: 2 / 3;
@@ -347,6 +379,26 @@ h1{
     background-color:rgb(37, 149, 201);
     color: white;
 }
+/* Standard project class END */
+
+/* Project class push pin */
+.projects .pushpin{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    height: 90%;
+    margin-bottom: 1em;
+}
+.projects:hover .pushpin{
+    display: none;
+}
+/* Make project straight and zoomed slightly on hover */
+#project1:hover, #project2:hover, #project3:hover, #project4:hover{
+    transform:rotate(0deg);
+    transform:scale(1.1, 1.1);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    z-index: 98;
+}
+/* Project 1 START */
 #project1 {
     grid-column: 1 / 2;
     border-bottom: solid 8px rgb(4, 192, 76);
@@ -358,7 +410,9 @@ h1{
 #project1 h1{
     background-color: rgb(4, 192, 76);
 }
+/* Project 1 END */
 
+/* Project 2 START */
 #project2 {
     grid-column: 2 / 3;
     border-bottom: solid 8px rgb(121, 27, 245);
@@ -371,11 +425,12 @@ h1{
 #project2 h1{
     background-color: rgb(121, 27, 245);
 }
-#project3, #project4{
-    grid-row: 3 / 4;
-}
+/* Project 2 END */
+
+/* Project 3 START */
 #project3 {
     grid-column: 1 / 2;
+    grid-row: 3 / 4;
     border-bottom: solid 8px rgb(29, 143, 137);
     transform:rotate(-13deg);
 }
@@ -386,8 +441,12 @@ h1{
     transform: rotate(-45deg);
     height: 150%;
 }
+/* Project 3 END */
+
+/* Project 4 START */
 #project4 {
     grid-column: 2 / 3;
+    grid-row: 3 / 4;
     border-bottom: solid 8px rgb(240, 73, 8);
     transform:rotate(-3deg);
 }
@@ -398,10 +457,10 @@ h1{
 #project4 h1{
     background-color: rgb(240, 73, 8);  
 }
+/* Project 4 END */
+/* Project section END */
 
-
-
-/*  */
+/* Social section */
 #social{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -425,42 +484,28 @@ h1{
     color: white;
     text-align: center;
 }
-#emaillink{
-    grid-row: 2 / 3;
-    grid-column: 2 / 3;
-    margin: 1em 0;
-    height: 6em;
-}
-#emailicon{
+.socialicon{
     height: 100%
 }
-#linkedlink{
+.sociallink{
     grid-row: 2 / 3;
-    grid-column: 3 / 4;
     height: 6em;
     margin: 1em 0;
 }
-#linkedicon{
-    height: 100%;
+#emaillink{
+    grid-column: 2 / 3;
+}
+#linkedlink{
+    grid-column: 3 / 4;
 }
 #gitlink{
-    grid-row: 2 / 3;
     grid-column: 4 / 5;
-    height: 6em;
-    margin: 1em 0;
-}
-#giticon{
-    height: 100%;
 }
 #twitterlink{
-    grid-row: 2 / 3;
     grid-column: 5 / 6;
-    height: 6em;
-    margin: 1em 0;
 }
-#twittericon{
-    height: 100%;
-}
+
+/* Responsive */ 
 @media(max-width: 1500px){
     .work{
         height: 75em;
@@ -490,7 +535,7 @@ h1{
     }
 }
 @media(max-width: 1200px){
-    #development, #education{
+    .aboutsection{
         width: 90%;
     }
     #education p{
@@ -552,9 +597,6 @@ h1{
     .work{
         height: 140em;
     }
-    #development, #education{
-        width: 85%;
-    }
     .projects .pushpin{
         height: 200%;
     }
@@ -564,7 +606,7 @@ h1{
 }
 @media(max-width: 650px){
     .about{
-        height: 40em;
+        height: 50em;
     }
     .work{
         height: 130em;
@@ -583,6 +625,12 @@ h1{
     }
     .button{
         font-size: 1.2em;
+    }
+    #education{
+        width: 80%;
+    }
+    #development{
+        width: 80%;
     }
 }
 @media(max-width: 500px){
@@ -603,7 +651,10 @@ h1{
         transform: rotate(4deg);
         height: 25em;
     }
-    #education h3, #development h3{
+    #development{
+        width: 90%;
+    }
+    .aboutsection h3{
         font-size: 1em;
     }
     .button{
