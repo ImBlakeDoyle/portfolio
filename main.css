@@ -200,7 +200,7 @@ h1{
 #bootstrapicon{
     grid-column: 4 / 5;
 }
-#ruby, #html, #css, #bootstrap{
+.codetitle{
     grid-row: 6 / 7;
     margin: 0;
     align-self: center;
@@ -219,7 +219,7 @@ h1{
 #bootstrap{
     grid-column: 4 / 5;
 }
-#marcellin, #coder{
+.edutitle{
     grid-row: 5 / 6;
     justify-self: end;
     text-align: center;
@@ -228,11 +228,12 @@ h1{
 }
 #marcellin{
     grid-column: 2 / 4;
+    justify-self: start;
 }
 #coder{
     grid-column: 4 / 6;
 }
-#marcellinabout, #coderabout{
+.edupara{
     font-size: 1em;
     grid-row: 6 / 7;
     margin: 0;
