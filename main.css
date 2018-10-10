@@ -137,14 +137,14 @@ h1{
 /* Development settings */
 #development{
     display: grid;
-    grid-template-rows: 1.5fr 5fr 3fr 1fr 4fr 2fr 1fr;
+    grid-template-rows: 1fr 5fr 3fr 1fr 4fr 2fr 1fr;
     border-bottom: solid 8px rgb(221, 74, 135);
     transform:rotate(-3deg);
 }
 
 /* Education settings */
 #education{
-    grid-template-rows: 1.5fr 5fr 3fr 1fr 2fr 4fr 1fr;
+    grid-template-rows: 1fr 5fr 3fr 1fr 2fr 4fr 1fr;
     border-bottom: solid 8px rgb(230, 141, 7);
     transform: rotate(7deg);
 }
@@ -185,6 +185,9 @@ h1{
     align-self: center;
     justify-self: center;
 }
+#eduicon{
+    height: 5.5em;
+}
 /* #eduicon{
     height: 80%;
 } */
@@ -192,7 +195,7 @@ h1{
 /* Pushpin settings */
 .pushpin{
     grid-area: 1 / 3 / 2 / 5;
-    height: 100%;
+    height: 2em;
     align-self: end;
     justify-self: center;
     margin-bottom: 0.5em;
@@ -319,11 +322,10 @@ h1{
 /* Standard project class START */
 .projects{
     display: grid;
-    grid-template-columns: 1fr;
-    /* grid-auto-rows: auto; */
+    /* grid-template-columns: 1fr; */
     margin-top: 1em;
     /* height: 100%; */
-    width: 46em;
+    width: 80%;
     background-color: white;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -381,7 +383,9 @@ h1{
 /* Project class push pin */
 .projects .pushpin{
     grid-area: 1 / 1 / 2 / 2;
-    margin-bottom: 1em;
+    padding-bottom: 1em;
+    height: 2.5em;
+    /* margin-bottom: 1em; */
 }
 .projects:hover .pushpin{
     display: none;
@@ -462,7 +466,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-auto-flow: row;
+    /* grid-auto-flow: row; */
     background-color: #f7f7f7;
     margin: 1em;
     margin-top: 2em;
@@ -505,7 +509,19 @@ h1{
 /* Responsive */ 
 @media(max-width: 1500px){
     .work{
-        height: 75em;
+        height: 90em;
+    }
+    #project1{
+        height: 35em;
+    }
+    #project2{
+        height: 45em;
+    }
+    #project3{
+        height: 35em;
+    }
+    #project4{
+        height: 35em;
     }
 }
 @media(max-width: 1300px){
@@ -513,16 +529,19 @@ h1{
         width: 80%;
     }
     .work{
-        height: 70em;
+        height: 77em;
     }
-    .projects{
-        width: 80%;
+    #project1{
+        height: 32em;
     }
-    .projects .pushpin{
-        height: 80%;
+    #project2{
+        height: 40em;
     }
-    #project2 .pushpin, #project3 .pushpin, #project4 .pushpin{
-        height: 100%;
+    #project3{
+        height: 32em;
+    }
+    #project4{
+        height: 32em;
     }
     .button{
         font-size: 1.5em;
@@ -557,27 +576,34 @@ h1{
         width: 60%;
     }
     #devicon{
-        height: 100%;
+        /* height: 100%; */
         margin: 0;
     }
     h1{
         font-size: 0.5em;
     }
     .work{
-        height: 200em;
+        height: 195em;
         grid-template-rows: 1fr 7fr 7fr 7fr 7fr;
+    }
+    .work h1{
+        margin-bottom: 0.5em;
     }
     #project1{
         grid-area: 2 / 1 / 3 / 3;
+        height: 45em;
     }
     #project2{
         grid-area: 3 / 1 / 4 / 3;
+        height: 51em;
     }
     #project3{
         grid-area: 4 / 1 / 5 / 3;
+        height: 45em;
     }
     #project4{
         grid-area: 5 / 1 / 6 / 3;
+        height: 45em;
     }
     #project1:hover, #project2:hover, #project3:hover, #project4:hover{
         transform: scale(1.1, 1.1);
@@ -585,13 +611,25 @@ h1{
 }
 @media(max-width: 800px){
     .work{
-        height: 140em;
+        height: 156em;
+    }
+    #project1{
+        height: 35em;
+    }
+    #project2{
+        height: 43em;
+    }
+    #project3{
+        height: 35em;
+    }
+    #project4{
+        height: 35em;
     }
     .projects .pushpin{
-        height: 200%;
+        height: 1.75em;
     }
     #project2 .pushpin, #project3 .pushpin, #project4 .pushpin{
-        height: 190%;
+        
     }
 }
 @media(max-width: 650px){
@@ -599,19 +637,25 @@ h1{
         height: 50em;
     }
     .work{
-        height: 130em;
+        height: 145em;
     }
-    .pushpin{
-        height: 150%;
+    .work h1{
+        margin-bottom: 0.25em;
     }
-    .projects .pushpin{
-        height: 150%;
+    #project1{
+        height: 32em;
     }
-    #project2 .pushpin, #project3 .pushpin, #project4 .pushpin{
-        height: 130%;
+    #project2{
+        height: 41em;
+    }
+    #project3{
+        height: 32em;
+    }
+    #project4{
+        height: 32em;
     }
     #social img{
-        height: 80%;
+        height: 5em;
     }
     .button{
         font-size: 1.2em;
@@ -627,12 +671,30 @@ h1{
     .about{
         height: 50em;
     }
+    #social h1{
+        margin-bottom: 0;
+    }
+    #social{
+        height: 10em;
+    }
     #social img{
-        height: 60%;
+        height: 4em;
     }  
     .work{
-        height: 100em;
+        height: 115em;
     } 
+    #project1{
+        height: 26em;
+    }
+    #project2{
+        height: 32em;
+    }
+    #project3{
+        height: 26em;
+    }
+    #project4{
+        height: 26em;
+    }
     .projects p{
         font-size: 1em;
     }
@@ -653,16 +715,28 @@ h1{
 }
 @media(max-width: 400px){
     .work{
-        height: 95em;
+        height: 100em;
+    }
+    #project1{
+        height: 22em;
+    }
+    #project2{
+        height: 28em;
+    }
+    #project3{
+        height: 22em;
+    }
+    #project4{
+        height: 22em;
     }
     #education h3{
         font-size: 0.9em;
     }
     #eduicon{
-        height: 60%;
+        /* height: 60%; */
     }
     #social img{
-        height: 40%;
+        height: 3em;
     } 
     #quote img{
         height: 200px;
