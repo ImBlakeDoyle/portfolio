@@ -31,6 +31,13 @@ nav{
         opacity: 1;
     }
 }
+@keyframes rotate-on-hover {
+    100% {
+        -webkit-transform: rotate(0deg);
+                transform: rotate(0deg);
+                transform: scale(1.2, 1.2);
+    }
+}
 /*Nav bar animation END  */
 
 /* Nav bar alignment settings START*/
@@ -164,7 +171,8 @@ h1{
 
 /* Hover effect for development and education */
 #development:hover, #education:hover{
-    transform:rotate(0deg);
+    animation: rotate-on-hover 1s;
+    /* transform:rotate(0deg); */
     transform: scale(1.2, 1.2);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     z-index: 98;
@@ -188,9 +196,6 @@ h1{
 #eduicon{
     height: 5.5em;
 }
-/* #eduicon{
-    height: 80%;
-} */
 
 /* Pushpin settings */
 .pushpin{
