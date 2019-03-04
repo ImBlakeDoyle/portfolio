@@ -302,7 +302,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 9fr 8fr;
-    height:95em;
+    height:160em;
     background-color: #f7f7f7;
     margin: 5em 1em 1em 1em;
     padding-bottom: 5em;
@@ -396,7 +396,7 @@ h1{
     display: none;
 }
 /* Make project straight and zoomed slightly on hover */
-#project1:hover, #project2:hover, #project3:hover, #project4:hover{
+#project1:hover, #project2:hover, #project3:hover, #project4:hover, #project5:hover{
     transform:rotate(0deg);
     transform:scale(1.1, 1.1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -462,6 +462,10 @@ h1{
 }
 #project4 h1{
     background-color: rgb(240, 73, 8);  
+}
+
+#project5 {
+    transform:rotate(6deg);
 }
 /* Project 4 END */
 /* Project section END */
