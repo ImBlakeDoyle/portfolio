@@ -145,6 +145,7 @@ h1{
 #development{
     display: grid;
     grid-template-rows: 1fr 5fr 3fr 1fr 4fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-bottom: solid 8px rgb(221, 74, 135);
     transform:rotate(-3deg);
 }
@@ -224,8 +225,11 @@ h1{
 #htmlicon{
     grid-column: 5 / 6;
 }
-#cssicon{
+#roricon{
     grid-column: 3 / 4;
+}
+#cssicon{
+    grid-column: 6 / 7;
 }
 #bootstrapicon{
     grid-column: 4 / 5;
@@ -246,9 +250,14 @@ h1{
     grid-column: 5 / 6;
 }
 #css{
+    grid-column: 6 / 7;
+}
+#rails{
     grid-column: 3 / 4;
 }
-
+#js{
+    grid-column: 1 / 2;
+}
 #bootstrap{
     grid-column: 4 / 5;
 }
