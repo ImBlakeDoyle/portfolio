@@ -145,6 +145,7 @@ h1{
 #development{
     display: grid;
     grid-template-rows: 1fr 5fr 3fr 1fr 4fr 2fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
     border-bottom: solid 8px rgb(221, 74, 135);
     transform:rotate(-3deg);
 }
@@ -224,8 +225,11 @@ h1{
 #htmlicon{
     grid-column: 5 / 6;
 }
-#cssicon{
+#roricon{
     grid-column: 3 / 4;
+}
+#cssicon{
+    grid-column: 6 / 7;
 }
 #bootstrapicon{
     grid-column: 4 / 5;
@@ -246,9 +250,14 @@ h1{
     grid-column: 5 / 6;
 }
 #css{
+    grid-column: 6 / 7;
+}
+#rails{
     grid-column: 3 / 4;
 }
-
+#js{
+    grid-column: 1 / 2;
+}
 #bootstrap{
     grid-column: 4 / 5;
 }
@@ -302,7 +311,7 @@ h1{
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 9fr 8fr;
-    height:95em;
+    height:160em;
     background-color: #f7f7f7;
     margin: 5em 1em 1em 1em;
     padding-bottom: 5em;
@@ -396,7 +405,7 @@ h1{
     display: none;
 }
 /* Make project straight and zoomed slightly on hover */
-#project1:hover, #project2:hover, #project3:hover, #project4:hover{
+#project1:hover, #project2:hover, #project3:hover, #project4:hover, #project5:hover{
     transform:rotate(0deg);
     transform:scale(1.1, 1.1);
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -462,6 +471,10 @@ h1{
 }
 #project4 h1{
     background-color: rgb(240, 73, 8);  
+}
+
+#project5 {
+    transform:rotate(6deg);
 }
 /* Project 4 END */
 /* Project section END */
