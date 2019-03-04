@@ -511,7 +511,7 @@ h1{
     height: 6em;
     margin: 1em 0;
 }
-#emaillink{
+#mediumlink{
     grid-column: 2 / 3;
 }
 #linkedlink{
@@ -527,7 +527,7 @@ h1{
 /* Responsive */ 
 @media(max-width: 1500px){
     .work{
-        height: 90em;
+        height: 150em;
     }
     #project1{
         height: 35em;
@@ -547,7 +547,7 @@ h1{
         width: 80%;
     }
     .work{
-        height: 77em;
+        height: 130em;
     }
     #project1{
         height: 32em;
@@ -601,7 +601,7 @@ h1{
         font-size: 0.5em;
     }
     .work{
-        height: 195em;
+        height: 270em;
         grid-template-rows: 1fr 7fr 7fr 7fr 7fr;
     }
     .work h1{
@@ -623,13 +623,17 @@ h1{
         grid-area: 5 / 1 / 6 / 3;
         height: 45em;
     }
+    #project5{
+        grid-area: 6 / 1 / 7 / 3;
+        height: 65em;
+    }
     #project1:hover, #project2:hover, #project3:hover, #project4:hover{
         transform: scale(1.1, 1.1);
     }
 }
 @media(max-width: 800px){
     .work{
-        height: 156em;
+        height: 215em;
     }
     #project1{
         height: 35em;
@@ -643,6 +647,9 @@ h1{
     #project4{
         height: 35em;
     }
+    #project5{
+        height: 55em;
+    }
     .projects .pushpin{
         height: 1.75em;
     }
@@ -655,7 +662,7 @@ h1{
         height: 50em;
     }
     .work{
-        height: 145em;
+        height: 195em;
     }
     .work h1{
         margin-bottom: 0.25em;
@@ -671,6 +678,9 @@ h1{
     }
     #project4{
         height: 32em;
+    }
+    #project5{
+        height: 50em;
     }
     #social img{
         height: 5em;
@@ -699,7 +709,7 @@ h1{
         height: 4em;
     }  
     .work{
-        height: 115em;
+        height: 153em;
     } 
     #project1{
         height: 26em;
@@ -712,6 +722,9 @@ h1{
     }
     #project4{
         height: 26em;
+    }
+    #project5{
+        height: 35em;
     }
     .projects p{
         font-size: 1em;
@@ -733,7 +746,7 @@ h1{
 }
 @media(max-width: 400px){
     .work{
-        height: 100em;
+        height: 130em;
     }
     #project1{
         height: 22em;
@@ -746,6 +759,9 @@ h1{
     }
     #project4{
         height: 22em;
+    }
+    #project5{
+        height: 30em;
     }
     #education h3{
         font-size: 0.9em;
